@@ -1,0 +1,355 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+   
+}
+
+main{
+   min-height: 100vh;
+   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.glass {
+   background: white;
+   min-height: 80vh;
+   width:  60%;
+   background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem)
+
+}
+
+nav {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   margin-right: 8px;
+   margin-top: 25px;
+}
+
+nav ul li:not(:last-child) {
+   margin-right: 5px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: grey;
+   margin-right: 25px;
+   font-size: 15px;
+   font-weight: bold;
+   
+}
+
+
+.links {
+   display: flex;
+   flex-direction: column;
+   margin: 3rem 3rem;
+   
+}
+
+.estudiante {
+   padding: 2rem;
+   position: relative;  
+}
+
+.estudiante img {
+   position: relative;
+   left: 1%;
+}
+
+
+.estudiante ul {
+   list-style: none;
+   display: flex;
+}
+
+.estudiante ul li a {
+   text-decoration: none;
+   position: absolute;
+   color: #adb1b4;
+   margin-right: 50px;
+   font-size: 30px;
+   font-weight: bold;
+   left: 15%;
+   top: 46%;
+}
+
+.contacto {
+   position: relative;  
+   padding: 2rem;
+   
+}
+
+.titulo h1 {
+   color:#0578ff;
+   font-size: 40px;
+   margin-top: -30px;
+   text-align: center;
+   font-weight: bold; 
+   
+}
+
+.contacto img {
+   position: relative;
+   height: 10%;
+   left: 10px;
+   top: -2rem;
+}
+
+.contacto ul {
+   list-style: none;
+   display: flex;
+}
+
+.contacto ul li a {
+   text-decoration: none;
+   position: absolute;
+   color: #adb1b4;
+   margin-right: 50px;
+   font-size: 30px;
+   font-weight: bold;
+   left: 15%;
+   top: 20%;
+}
+
+/* Aquí estan los estilos de la pagina ESTUDIANTE*/
+
+.info h1{
+   color:white;
+   font-size: 40px;
+   margin-top: -40px;
+   text-align: center;
+   font-weight: bold; 
+}
+
+.info img {
+   position: absolute;
+   left: 40%;
+   top: 4rem;
+   border-radius: 50%;
+}
+
+.info h3 {
+   position: relative;
+   left: 37%;
+   top: 8rem;
+   color: #8a939c;
+}
+
+.info h4{
+   position: relative;
+   top: 180px;
+   color: #8a939c;
+
+}
+
+.info hr{
+   position: relative;
+   top: 180px;
+
+}
+
+.info #edad {
+   position: absolute;
+   margin-top: 12rem;
+   font-size: 11px;
+
+}
+
+.info #edad_desc{
+   position: absolute;
+   opacity: 0.5;
+   margin-top: 12rem;
+   margin-left:  6rem;
+}
+
+.info #prof {
+   position: absolute;
+   margin-top: 14rem;
+   font-size: 11px;
+   
+}
+
+.info #prof_desc{
+   position: absolute;
+   margin-top: 14rem;
+   margin-left: 6rem;
+   opacity: 0.5;
+}
+
+.info #correo {
+   position: absolute;
+   margin-top: 16rem;
+   font-size: 11px;
+   
+}
+
+.info #correo_desc{
+   position: absolute;
+   margin-top: 16rem;
+   margin-left: 6rem;
+   opacity: 0.5;
+}
+
+.info #telefono {
+   position: absolute;
+   margin-top: 18rem;
+   font-size: 11px;
+}
+
+.info #telefono_desc{
+   position: absolute;
+   margin-top: 18rem;
+   margin-left: 6rem;
+   opacity: 0.5;
+}
+
+.info #direccion {
+   position: absolute;
+   margin-top: 20rem;
+   font-size: 11px;
+}
+
+.info #direccion_desc{
+   position: absolute;
+   margin-top: 20rem;
+   margin-left: 6rem;
+   opacity: 0.5;
+}
+
+
+.perfil{
+   position: absolute;
+   left: 30rem;
+   top: 16rem;
+}
+.perfil h4{
+   position: relative;
+   color: #8a939c;
+
+}
+
+.perfil #aptitudes{
+   position: absolute;
+   top: 2rem;
+}
+
+.perfil #aptitudes_desc{
+   text-align: justify;
+   margin-top: 1.5rem;
+   font-size: 8pt;
+   padding: 2%;
+   opacity: 0.6;
+}
+
+
+.perfil #conocimientos{
+   position: absolute;
+   top: 7rem;
+}
+
+.perfil #con_desc{
+   text-align: justify;
+   margin-top: 1rem;
+   font-size: 8pt;
+   padding: 2%;
+   opacity: 0.6;
+}
+
+/* Aquí estan los estilos de la pagina CONTACTO*/
+
+.contacto #titulo{
+   position: relative;
+   text-align: center;
+   color: #8a939c;
+}
+
+.formulario {
+   background: white;
+   min-height: 45vh;
+   width:  55%;
+   position: relative;
+   margin: auto;
+   margin-top: 2rem;
+   border-radius: 3%;
+}
+
+#label_nombre{
+   position: relative;
+   top: -15rem;
+   left: 12rem;
+}
+
+.input_nombre{
+   position: relative;
+   top: -13.7rem;
+   left: 3rem;
+   border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #39c;
+   font-size: 12px;
+   padding: 2px;
+  
+}
+
+#label_correo{
+   position: relative;
+   top: -11.5rem;
+   left: -16rem;
+}
+
+.input_correo{
+   position: relative;
+   top: -13.8rem;
+   left: 12rem;
+   border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #39c;
+   font-size: 12px;
+   padding: 2px;
+  
+}
+
+
+.text_area{
+   position: relative;
+   top: -8rem;
+   left: -7rem;
+   border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid #39c;
+   font-size: 12px;
+   padding: 2px;
+}
+
+#enviar{
+   position: absolute;
+   color: #0578ff;
+   border: 1px solid #39c;
+   top: 21rem;
+   left: 14rem;
+   width: 70px;
+}
